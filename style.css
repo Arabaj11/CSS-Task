@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+P{
+  font-weight: 600;
+}
+body {
+  margin: 0;
+}
+
+img {
+  cursor: pointer;
+}
+
+.header h1 {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.header {
+  background-image: url(images/banner.webp);
+  width: 100%;
+  padding: 150px;
+  text-align: center;
+
+}
+
+.header h1 {
+  font-size: xx-large;
+  font-weight: bolder;
+  color: azure;
+}
+
+.header h1 span {
+  color: orangered;
+
+}
+
+.nav-bar {
+  
+  display: flex;
+  background-color: #333;
+ 
+}
+
+.nav-bar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.nav-bar a:hover {
+  background: rgb(232, 229, 229);
+  color: rgb(5, 1, 1);
+}
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.col1 {
+  flex: 25;
+  background: #e1c6c6;
+
+}
+
+.col1 .block {
+  margin: 30px 20px;
+}
+
+.col2 {
+  flex: 75;
+  margin-left: 10px;
+}
+
+.col2 .second-block {
+  margin: 30px 20px;
+}
+
+.discount h1 {
+  color: orangered;
+}
+
+.discount h4 {
+  color: blue;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+}
+
+.row .item {
+  flex: 10;
+  margin-left: 10px;
+  margin-bottom: 0;
+  border: 1px solid;
+}
+
+.row .item-info {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  margin-top: 0;
+}
+
+.row .item-info .price p {
+  display: inline;
+}
+
+.discount-2{
+  margin-top: 20PX;
+}
+
+
+
+/* --------------------footer------------- */
+
+footer {
+  background-color: rgb(63, 62, 62);
+  color: aliceblue;
+  height: 200px;
+  width: 100%;
+}
+
+
+/* ------------media query------- */
+
+@media (max-width:700px){
+  .nav-bar{
+    flex-direction: column;
+    text-align: left;
+  }
+  .discount .row{
+    flex-direction: column;
+  }
+}
+
+@media (max-width:700px){
+
+}
